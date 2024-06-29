@@ -6,10 +6,9 @@ import Cook from './Components/Cook/Cook'
 import { useState } from 'react'
 import RecipesTD from './Components/Recipes/RecipesTD'
 function App() {
-  const [cook, setCook]=useState([]);
+  const [cook, setCook]= useState([]);
   const handleWantToCook=(myrecipe)=>{
-    const newCook=[...cook,myrecipe];
-    setCook(newCook);
+    setCook([...cook,myrecipe]);
   }
   return (
     <>
@@ -19,7 +18,7 @@ function App() {
         <RecipesTD></RecipesTD>
         <div className='flex gap-6'>
           <Recipes handleWantToCook={handleWantToCook}></Recipes>
-          <Cook cook={cook}></Cook>
+          <Cook cookItem={cook}></Cook>
         </div>
       </div>
     </>

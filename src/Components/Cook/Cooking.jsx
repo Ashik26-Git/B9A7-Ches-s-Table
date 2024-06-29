@@ -1,14 +1,16 @@
 import PropTypes from 'prop-types'
-const Cooking = ({item}) => {
-    console.log(item);
-    const [recipe_name]=item;
+const Cooking = ({recipeItem}) => {
+    console.log(recipeItem);
+    const {recipe_name,calories,preparing_time}= recipeItem;
     return (
-        <div>
-            <h1>{recipe_name}</h1>
-        </div>
+        <tr>
+            <td className='border border-black'>{recipe_name}</td>
+            <td className='border border-black'>{preparing_time}</td>
+            <td className='border border-black'>{calories}</td>
+        </tr>
     );
 };
 Cooking.propTypes={
-    item: PropTypes.array
+    recipeItem: PropTypes.object.isRequired
 }
 export default Cooking;
