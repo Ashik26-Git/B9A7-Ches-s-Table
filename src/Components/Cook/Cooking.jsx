@@ -1,4 +1,3 @@
-Cooking.jsx
 import PropTypes from 'prop-types'
 const Cooking = ({recipeItem,handleCurentlyCooking}) => {
 const {recipe_name,preparing_time,calories}=recipeItem;

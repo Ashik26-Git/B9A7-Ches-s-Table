@@ -1,4 +1,3 @@
-Cook.jsx
 import PropTypes from 'prop-types'
 import Cooking from './Cooking'
 import Preparing from '../Preparing/Preparing';
