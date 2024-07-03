@@ -20,6 +20,7 @@ const Recipes = ({handleWantToCook}) => {
                         handleWantToCook={handleWantToCook}
                     ></Recipe>)
                 }
+            
             </div>
         </div>
     );
